@@ -43,8 +43,8 @@ transform = transforms.Compose([
 
 # Load embeddings and labels (update paths as needed)
 try:
-    embeddings = np.load("/home/matheesha/Documents/se/embeddings .npy")
-    labels = np.load("/home/matheesha/Documents/se/labels .npy")
+    embeddings = np.load("/home/matheesha/Documents/se/face-recognition/embeddings.npy")
+    labels = np.load("/home/matheesha/Documents/se/face-recognition/labels.npy")
     logger.info(f"Loaded {len(embeddings)} embeddings and {len(labels)} labels")
 except FileNotFoundError:
     logger.error("Could not load embeddings or labels files")
